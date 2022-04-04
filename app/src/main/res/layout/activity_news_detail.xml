@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewsDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/news_detailreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:textSize="20sp"
+        android:text="13週年慶 Part Ⅱ：蛋糕新品嚐鮮9折"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:text="JUN 11TH, 2019"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/newspic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="過生日當然要有蛋糕慶祝才應景！千呼萬喚、眾所期待的蛋糕新品來囉～使用法國進口Kiri奶油乳酪的「岩燒黃金乳酪派」，以及草莓酸甜口感綿密迷人的「粉紅泡泡慕斯蛋糕」，週年慶第二波 6/20(四)~6/30(日) 嚐鮮 9 折優惠！\n\n
+岩燒黃金乳酪派 (蛋奶素）\n
+定價：單片＄60／8吋＄480\n
+主要原料：法國Kiri奶油乳酪、天然奶油、鮮奶油、杏仁粉、殺菌蛋\n
+使用法國進口、深受日本甜點師傅喜愛的Kiri奶油乳酪，濃郁奶香混合淡鹹味的英式奶醬，表層烤的金黃焦糖色澤散發微微蛋香，鹹甜綿密口感細膩多變，一口燃燒你的美食味蕾！\n\n
+粉紅泡泡慕斯蛋糕 (葷）\n
+定價：單片＄60／6吋＄480\n
+主要原料：草莓果泥、奶油乳酪、紅酒、萊姆酒、鮮奶油、殺菌蛋\n
+濕潤綿密的草莓慕斯夾著起司奶酪，佐以少許紅酒與萊姆酒提襯風味、平衡甜膩感，酸酸甜甜、清新迷人，猶如戀愛被粉紅泡泡包圍的幸福感受。（紅色為草莓果泥天然顏色，無添加色素和防腐劑，請安心食用）\n\n
+
+備註\n
+・商品數量以各門市實際販售現場狀況為準。\n
+・優惠不並行，不適用外送服務。\n
+・商品以實品為準。\n\n\n\n"/>
+
+</LinearLayout>
+</ScrollView>

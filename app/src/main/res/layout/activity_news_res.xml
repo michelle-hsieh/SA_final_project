@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".news_res">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimarymid"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:text="最新消息"/>
+
+            <ImageButton
+                android:id="@+id/news_return"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@drawable/ic_returnback" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/news_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:text="123"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/news_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_topic"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/news_btu"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/news_topic"
+            android:text="123123123123123123"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date"
+        android:layout_below="@+id/news_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/news_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/news_context"
+        android:textColor="#696969"
+        android:text="123123123"
+        android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/news_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/date"
+        android:background="#696969"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/news_line">
+
+        <LinearLayout
+            android:id="@+id/news_new"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/news_line">
+
+            <TextView
+                android:id="@+id/news_detail"
+                android:layout_below="@id/news_line"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:text="21312312"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

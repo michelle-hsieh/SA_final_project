@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sa_f">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".GlobalVariables"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".choiceplace"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".NewsActivity" />
+
+        <activity android:name=".NewsDetailActivity" />
+
+        <activity android:name=".CateActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".HistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".MyFavActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".ManagerLoginActivity" />
+        <activity android:name=".ResLoginActivity" />
+        <activity
+            android:name=".Diary_item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".news_res"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyDiary"
+            android:label="@string/title_activity_my_diary"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".Profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Blank" />
+        <activity
+            android:name=".res_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- android:label="@string/app_name" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".profile_related.addNewDiary"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+    </application>
+
+</manifest>

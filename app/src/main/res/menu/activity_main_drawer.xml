@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/menu_login" />
+        <item
+            android:id="@+id/nav_place"
+            android:icon="@drawable/ic_location_city_black_24dp"
+            android:title="@string/menu_place" />
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/menu_fav" />
+        <item
+            android:id="@+id/nav_site_search"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="@string/menu_site_search" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="@string/menu_history" />
+        <item
+            android:id="@+id/nav_diary"
+            android:icon="@drawable/ic_border_color_black_24dp"
+            android:title="@string/menu_diary" />
+    </group>
+
+    <item android:title="@string/menu_category">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_j"
+                    android:title="@string/menu_j" />
+                <item
+                    android:id="@+id/nav_k"
+                    android:title="@string/menu_k" />
+                <item
+                    android:id="@+id/nav_a"
+                    android:title="@string/menu_a" />
+                <item
+                    android:id="@+id/nav_c"
+                    android:title="@string/menu_c" />
+                <item
+                    android:id="@+id/nav_h"
+                    android:title="@string/menu_h" />
+                <item
+                    android:id="@+id/nav_t"
+                    android:title="@string/menu_t" />
+                <item
+                    android:id="@+id/nav_v"
+                    android:title="@string/menu_v" />
+                <item
+                    android:id="@+id/nav_e"
+                    android:title="@string/menu_e" />
+                <item
+                    android:id="@+id/nav_pot"
+                    android:title="@string/menu_pot" />
+                <item
+                    android:id="@+id/nav_s"
+                    android:title="@string/menu_s" />
+                <item
+                    android:id="@+id/nav_va"
+                    android:title="@string/menu_va" />
+                <item
+                    android:id="@+id/nav_com"
+                    android:title="@string/menu_com" />
+                <item
+                    android:id="@+id/nav_after"
+                    android:title="@string/menu_after" />
+                <item
+                    android:id="@+id/nav_morn"
+                    android:title="@string/menu_morn" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

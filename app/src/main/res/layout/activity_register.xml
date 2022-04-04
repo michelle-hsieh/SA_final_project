@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:layout_marginBottom="150dp">
+
+        <ImageButton
+            android:id="@+id/ib_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="註冊"
+            android:textAlignment="center"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/et_regAcc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="帳號"/>
+
+    <EditText
+        android:id="@+id/et_regName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="使用者名稱"/>
+
+    <EditText
+        android:id="@+id/et_regPw"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="密碼"
+        android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="註冊"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

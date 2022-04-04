@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:background="#E8E8E8">
+
+    <ImageView
+        android:id="@+id/photo_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food1"/>
+
+    <TextView
+        android:id="@+id/place_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo_image"
+        android:text="place name"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/page_star"
+        android:layout_width="406dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/place_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="place desc"
+            android:textColor="#696969"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/place_his"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="123123"
+            android:layout_weight="4"
+            android:textColor="#696969"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_grade_black_24dp"
+            android:text="3"
+            android:textColor="#000"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/page_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_star"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/place_blank"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/love_Button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_favorite_border_black_24dp"
+            android:text="收藏"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/hot_Button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:text="餐廳資訊" />
+
+    </LinearLayout>
+
+</RelativeLayout>

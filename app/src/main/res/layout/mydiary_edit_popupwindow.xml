@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    tools:context=".MyDiary"
+    android:orientation="vertical">
+
+    <TextView
+         android:id="@+id/tv_topic"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="12dp"
+         android:layout_marginTop="10dp"
+         android:text="@string/topic"
+         android:textSize="18sp"/>
+    <EditText
+         android:id="@+id/et_diary_topic"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_toEndOf="@+id/tv_topic"
+         android:layout_marginEnd="10dp"/>
+    <TextView
+            android:id="@+id/tv_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_topic"
+            android:layout_alignStart="@+id/tv_topic"
+            android:layout_marginTop="15sp"
+            android:textSize="18sp"
+            android:text="@string/restaurant"/>
+    <EditText
+            android:id="@+id/et_diary_res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_topic"
+            android:layout_toEndOf="@+id/tv_res"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    <EditText
+            android:id="@+id/diary_content"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/et_diary_res"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="12dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:hint="想要寫些什麼呢..."/>
+
+    <ImageView
+            android:id="@+id/img_plus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/diary_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <CheckBox
+            android:id="@+id/is_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_below="@+id/img_plus"
+            android:layout_marginTop="10dp"
+            android:text="@string/share" />
+
+    <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_toStartOf="@+id/btn_save"
+            android:backgroundTint="@color/colorWhite"
+            android:text="@string/cancel" />
+
+    <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/diary_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/save" />
+
+</RelativeLayout>
